@@ -1,0 +1,144 @@
+{
+  "chaoslib-version": "1.27.3",
+  "platform": "macOS-12.3.1-x86_64-i386-64bit",
+  "node": "C02FM4GPMD6R",
+  "experiment": {
+    "version": "1.0.0",
+    "title": "What happens if we terminate a Pod?",
+    "description": "If a Pod is terminated, a new one should be created in its places.",
+    "tags": [
+      "k8s",
+      "pod"
+    ],
+    "steady-state-hypothesis": {
+      "title": "Pod exists",
+      "probes": [
+        {
+          "name": "pod-exists",
+          "type": "probe",
+          "tolerance": 1,
+          "provider": {
+            "type": "python",
+            "func": "count_pods",
+            "module": "chaosk8s.pod.probes",
+            "arguments": {
+              "label_selector": "app=go-demo-8",
+              "ns": "go-demo-8"
+            }
+          }
+        }
+      ]
+    },
+    "method": [
+      {
+        "type": "action",
+        "name": "terminate-pod",
+        "provider": {
+          "type": "python",
+          "module": "chaosk8s.pod.actions",
+          "func": "terminate_pods",
+          "arguments": {
+            "label_selector": "app=go-demo-8",
+            "rand": true,
+            "ns": "go-demo-8"
+          }
+        },
+        "pauses": {
+          "after": 10
+        }
+      }
+    ],
+    "dry": null
+  },
+  "start": "2022-05-30T08:09:32.187826",
+  "status": "completed",
+  "deviated": false,
+  "steady_states": {
+    "before": {
+      "steady_state_met": true,
+      "probes": [
+        {
+          "activity": {
+            "name": "pod-exists",
+            "type": "probe",
+            "tolerance": 1,
+            "provider": {
+              "type": "python",
+              "func": "count_pods",
+              "module": "chaosk8s.pod.probes",
+              "arguments": {
+                "label_selector": "app=go-demo-8",
+                "ns": "go-demo-8"
+              }
+            }
+          },
+          "output": 1,
+          "status": "succeeded",
+          "start": "2022-05-30T08:09:32.189699",
+          "end": "2022-05-30T08:09:32.300146",
+          "duration": 0.110447,
+          "tolerance_met": true
+        }
+      ]
+    },
+    "after": {
+      "steady_state_met": true,
+      "probes": [
+        {
+          "activity": {
+            "name": "pod-exists",
+            "type": "probe",
+            "tolerance": 1,
+            "provider": {
+              "type": "python",
+              "func": "count_pods",
+              "module": "chaosk8s.pod.probes",
+              "arguments": {
+                "label_selector": "app=go-demo-8",
+                "ns": "go-demo-8"
+              }
+            }
+          },
+          "output": 1,
+          "status": "succeeded",
+          "start": "2022-05-30T08:09:42.367378",
+          "end": "2022-05-30T08:09:42.419707",
+          "duration": 0.052329,
+          "tolerance_met": true
+        }
+      ]
+    },
+    "during": []
+  },
+  "run": [
+    {
+      "activity": {
+        "type": "action",
+        "name": "terminate-pod",
+        "provider": {
+          "type": "python",
+          "module": "chaosk8s.pod.actions",
+          "func": "terminate_pods",
+          "arguments": {
+            "label_selector": "app=go-demo-8",
+            "rand": true,
+            "ns": "go-demo-8"
+          }
+        },
+        "pauses": {
+          "after": 10
+        }
+      },
+      "output": [
+        "go-demo-8-cc8f5f6d8-6c7xk"
+      ],
+      "status": "succeeded",
+      "start": "2022-05-30T08:09:32.300793",
+      "end": "2022-05-30T08:09:32.360405",
+      "duration": 0.059612
+    }
+  ],
+  "rollbacks": [],
+  "end": "2022-05-30T08:09:42.420337",
+  "duration": 10.285279989242554
+}

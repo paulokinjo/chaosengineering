@@ -15,8 +15,8 @@ steady-state-hypothesis:
       func: count_pods
       module: chaosk8s.pod.probes
       arguments:
-        label_selector: app=webapp
-        ns: chaosengineering
+        label_selector: app=go-demo-8
+        ns: go-demo-8
   - name: pod-in-phase
     type: probe
     tolerance: true
@@ -25,8 +25,8 @@ steady-state-hypothesis:
       func: pods_in_phase
       module: chaosk8s.pod.probes
       arguments:
-        label_selector: app=webapp
-        ns: chaosengineering
+        label_selector: app=go-demo-8
+        ns: go-demo-8
         phase: Running
   - name: pod-in-conditions
     type: probe
@@ -36,8 +36,8 @@ steady-state-hypothesis:
       func: pods_in_conditions
       module: chaosk8s.pod.probes
       arguments:
-        label_selector: app=webapp
-        ns: chaosengineering
+        label_selector: app=go-demo-8
+        ns: go-demo-8
         conditions:
         - type: Ready
           status: "True"
@@ -49,8 +49,8 @@ method:
     module: chaosk8s.pod.actions
     func: terminate_pods
     arguments:
-      label_selector: app=webapp
+      label_selector: app=go-demo-8
       rand: true
-      ns: chaosengineering
+      ns: go-demo-8
   pauses: 
-    after: 50
+    after: 10

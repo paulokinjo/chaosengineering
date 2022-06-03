@@ -1,0 +1,538 @@
+[36m[2022-05-30 16:18:29 DEBUG] [cli:112][39m ###############################################################################
+[36m[2022-05-30 16:18:29 DEBUG] [cli:113][39m Running command 'run'
+[36m[2022-05-30 16:18:29 DEBUG] [cli:117][39m Using settings file '/Users/paulo.kinjo/.chaostoolkit/settings.yaml'
+[36m[2022-05-30 16:18:30 DEBUG] [settings:30][39m The Chaos Toolkit settings file could not be found at '/Users/paulo.kinjo/.chaostoolkit/settings.yaml'.
+[36m[2022-05-30 16:18:30 DEBUG] [__init__:399][39m No controls to apply on 'loader'
+[36m[2022-05-30 16:18:30 DEBUG] [__init__:399][39m No controls to apply on 'loader'
+[36m[2022-05-30 16:18:30 DEBUG] [caching:24][39m Building activity cache...
+[36m[2022-05-30 16:18:30 DEBUG] [caching:35][39m Cached 1 activities
+[32m[2022-05-30 16:18:30 INFO] [experiment:58][39m Validating the experiment's syntax
+[36m[2022-05-30 16:18:30 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2022-05-30 16:18:30 DEBUG] [secret:78][39m Loading secrets...
+[36m[2022-05-30 16:18:30 DEBUG] [secret:104][39m Done loading secrets
+[32m[2022-05-30 16:18:39 INFO] [experiment:109][39m Experiment looks valid
+[36m[2022-05-30 16:18:39 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2022-05-30 16:18:39 DEBUG] [caching:24][39m Building activity cache...
+[36m[2022-05-30 16:18:39 DEBUG] [caching:35][39m Cached 1 activities
+[36m[2022-05-30 16:18:39 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2022-05-30 16:18:39 DEBUG] [secret:78][39m Loading secrets...
+[36m[2022-05-30 16:18:39 DEBUG] [secret:104][39m Done loading secrets
+[36m[2022-05-30 16:18:39 DEBUG] [configuration:155][39m Loading dynamic configuration...
+[32m[2022-05-30 16:18:39 INFO] [run:320][39m Running experiment: What happens if we terminate a Pod?
+[36m[2022-05-30 16:18:39 DEBUG] [__init__:52][39m Initializing controls
+[32m[2022-05-30 16:18:39 INFO] [run:344][39m Steady-state strategy: default
+[32m[2022-05-30 16:18:39 INFO] [run:348][39m Rollbacks strategy: default
+[32m[2022-05-30 16:18:39 INFO] [run:353][39m No steady state hypothesis defined. That's ok, just exploring.
+[36m[2022-05-30 16:18:39 DEBUG] [__init__:399][39m No controls to apply on 'experiment'
+[32m[2022-05-30 16:18:39 INFO] [run:607][39m Playing your experiment's method now...
+[36m[2022-05-30 16:18:39 DEBUG] [__init__:399][39m No controls to apply on 'method'
+[36m[2022-05-30 16:18:39 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[32m[2022-05-30 16:18:39 INFO] [activity:188][39m Action: terminate-pod
+[36m[2022-05-30 16:18:39 DEBUG] [python:33][39m Activity 'terminate-pod' loaded from '/Users/paulo.kinjo/.venvs/chaostk/lib/python3.8/site-packages/chaosk8s/pod/actions.py'
+[36m[2022-05-30 16:18:39 DEBUG] [__init__:73][39m Using Kubernetes context 'default' from config '/Users/paulo.kinjo/.kube/config'
+[36m[2022-05-30 16:18:39 DEBUG] [actions:232][39m Found 1 pods labelled 'app=go-demo-8' in ns go-demo-8
+[36m[2022-05-30 16:18:39 DEBUG] [activity:205][39m   => succeeded with '['go-demo-8']'
+[36m[2022-05-30 16:18:39 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[36m[2022-05-30 16:18:39 DEBUG] [__init__:399][39m No controls to apply on 'method'
+[32m[2022-05-30 16:18:39 INFO] [run:893][39m Let's rollback...
+[36m[2022-05-30 16:18:39 DEBUG] [__init__:399][39m No controls to apply on 'rollback'
+[32m[2022-05-30 16:18:39 INFO] [rollback:27][39m No declared rollbacks, let's move on.
+[36m[2022-05-30 16:18:39 DEBUG] [__init__:399][39m No controls to apply on 'rollback'
+[32m[2022-05-30 16:18:39 INFO] [run:458][39m Experiment ended with status: completed
+[36m[2022-05-30 16:18:39 DEBUG] [__init__:399][39m No controls to apply on 'experiment'
+[36m[2022-05-30 16:18:39 DEBUG] [__init__:91][39m Cleaning up controls
+[36m[2022-05-30 16:18:39 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2022-05-30 17:00:07 DEBUG] [cli:112][39m ###############################################################################
+[36m[2022-05-30 17:00:07 DEBUG] [cli:113][39m Running command 'run'
+[36m[2022-05-30 17:00:07 DEBUG] [cli:117][39m Using settings file '/Users/paulo.kinjo/.chaostoolkit/settings.yaml'
+[36m[2022-05-30 17:00:08 DEBUG] [settings:30][39m The Chaos Toolkit settings file could not be found at '/Users/paulo.kinjo/.chaostoolkit/settings.yaml'.
+[36m[2022-05-30 17:00:08 DEBUG] [__init__:399][39m No controls to apply on 'loader'
+[36m[2022-05-30 17:00:08 DEBUG] [__init__:399][39m No controls to apply on 'loader'
+[36m[2022-05-30 17:00:08 DEBUG] [caching:24][39m Building activity cache...
+[36m[2022-05-30 17:00:08 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2022-05-30 17:00:08 INFO] [experiment:58][39m Validating the experiment's syntax
+[36m[2022-05-30 17:00:08 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2022-05-30 17:00:08 DEBUG] [secret:78][39m Loading secrets...
+[36m[2022-05-30 17:00:08 DEBUG] [secret:104][39m Done loading secrets
+[32m[2022-05-30 17:00:11 INFO] [experiment:109][39m Experiment looks valid
+[36m[2022-05-30 17:00:11 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2022-05-30 17:00:11 DEBUG] [caching:24][39m Building activity cache...
+[36m[2022-05-30 17:00:11 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2022-05-30 17:00:11 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2022-05-30 17:00:11 DEBUG] [secret:78][39m Loading secrets...
+[36m[2022-05-30 17:00:11 DEBUG] [secret:104][39m Done loading secrets
+[36m[2022-05-30 17:00:11 DEBUG] [configuration:155][39m Loading dynamic configuration...
+[32m[2022-05-30 17:00:11 INFO] [run:320][39m Running experiment: What happens if we terminate a Pod?
+[36m[2022-05-30 17:00:11 DEBUG] [__init__:52][39m Initializing controls
+[32m[2022-05-30 17:00:11 INFO] [run:344][39m Steady-state strategy: default
+[32m[2022-05-30 17:00:11 INFO] [run:348][39m Rollbacks strategy: default
+[36m[2022-05-30 17:00:11 DEBUG] [__init__:399][39m No controls to apply on 'experiment'
+[36m[2022-05-30 17:00:11 DEBUG] [run:506][39m Running steady-state hypothesis before the method
+[32m[2022-05-30 17:00:11 INFO] [hypothesis:182][39m Steady state hypothesis: Pod exists
+[36m[2022-05-30 17:00:11 DEBUG] [__init__:399][39m No controls to apply on 'hypothesis'
+[36m[2022-05-30 17:00:11 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[32m[2022-05-30 17:00:11 INFO] [activity:188][39m Probe: pod-exists
+[36m[2022-05-30 17:00:11 DEBUG] [python:33][39m Activity 'pod-exists' loaded from '/Users/paulo.kinjo/.venvs/chaostk/lib/python3.8/site-packages/chaosk8s/pod/probes.py'
+[36m[2022-05-30 17:00:11 DEBUG] [__init__:73][39m Using Kubernetes context 'default' from config '/Users/paulo.kinjo/.kube/config'
+[36m[2022-05-30 17:00:11 DEBUG] [probes:218][39m Found 0 pods matching label 'app=go-demo-8' in ns 'go-demo-8'
+[36m[2022-05-30 17:00:11 DEBUG] [activity:205][39m   => succeeded with '0'
+[36m[2022-05-30 17:00:11 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[36m[2022-05-30 17:00:11 DEBUG] [hypothesis:221][39m allowed tolerance is 1
+[36m[2022-05-30 17:00:11 DEBUG] [__init__:399][39m No controls to apply on 'hypothesis'
+[31m[2022-05-30 17:00:11 CRITICAL] [run:516][39m Steady state probe 'pod-exists' is not in the given tolerance so failing this experiment
+[32m[2022-05-30 17:00:11 INFO] [run:458][39m Experiment ended with status: failed
+[36m[2022-05-30 17:00:11 DEBUG] [__init__:399][39m No controls to apply on 'experiment'
+[36m[2022-05-30 17:00:11 DEBUG] [__init__:91][39m Cleaning up controls
+[36m[2022-05-30 17:00:11 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2022-05-30 17:00:38 DEBUG] [cli:112][39m ###############################################################################
+[36m[2022-05-30 17:00:38 DEBUG] [cli:113][39m Running command 'run'
+[36m[2022-05-30 17:00:38 DEBUG] [cli:117][39m Using settings file '/Users/paulo.kinjo/.chaostoolkit/settings.yaml'
+[36m[2022-05-30 17:00:38 DEBUG] [settings:30][39m The Chaos Toolkit settings file could not be found at '/Users/paulo.kinjo/.chaostoolkit/settings.yaml'.
+[36m[2022-05-30 17:00:38 DEBUG] [__init__:399][39m No controls to apply on 'loader'
+[36m[2022-05-30 17:00:38 DEBUG] [__init__:399][39m No controls to apply on 'loader'
+[36m[2022-05-30 17:00:38 DEBUG] [caching:24][39m Building activity cache...
+[36m[2022-05-30 17:00:38 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2022-05-30 17:00:39 INFO] [experiment:58][39m Validating the experiment's syntax
+[36m[2022-05-30 17:00:39 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2022-05-30 17:00:39 DEBUG] [secret:78][39m Loading secrets...
+[36m[2022-05-30 17:00:39 DEBUG] [secret:104][39m Done loading secrets
+[32m[2022-05-30 17:00:40 INFO] [experiment:109][39m Experiment looks valid
+[36m[2022-05-30 17:00:40 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2022-05-30 17:00:40 DEBUG] [caching:24][39m Building activity cache...
+[36m[2022-05-30 17:00:40 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2022-05-30 17:00:40 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2022-05-30 17:00:40 DEBUG] [secret:78][39m Loading secrets...
+[36m[2022-05-30 17:00:40 DEBUG] [secret:104][39m Done loading secrets
+[36m[2022-05-30 17:00:40 DEBUG] [configuration:155][39m Loading dynamic configuration...
+[32m[2022-05-30 17:00:40 INFO] [run:320][39m Running experiment: What happens if we terminate a Pod?
+[36m[2022-05-30 17:00:40 DEBUG] [__init__:52][39m Initializing controls
+[32m[2022-05-30 17:00:40 INFO] [run:344][39m Steady-state strategy: default
+[32m[2022-05-30 17:00:40 INFO] [run:348][39m Rollbacks strategy: default
+[36m[2022-05-30 17:00:40 DEBUG] [__init__:399][39m No controls to apply on 'experiment'
+[36m[2022-05-30 17:00:40 DEBUG] [run:506][39m Running steady-state hypothesis before the method
+[32m[2022-05-30 17:00:40 INFO] [hypothesis:182][39m Steady state hypothesis: Pod exists
+[36m[2022-05-30 17:00:40 DEBUG] [__init__:399][39m No controls to apply on 'hypothesis'
+[36m[2022-05-30 17:00:40 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[32m[2022-05-30 17:00:40 INFO] [activity:188][39m Probe: pod-exists
+[36m[2022-05-30 17:00:40 DEBUG] [python:33][39m Activity 'pod-exists' loaded from '/Users/paulo.kinjo/.venvs/chaostk/lib/python3.8/site-packages/chaosk8s/pod/probes.py'
+[36m[2022-05-30 17:00:40 DEBUG] [__init__:73][39m Using Kubernetes context 'default' from config '/Users/paulo.kinjo/.kube/config'
+[36m[2022-05-30 17:00:40 DEBUG] [probes:218][39m Found 1 pods matching label 'app=go-demo-8' in ns 'go-demo-8'
+[36m[2022-05-30 17:00:40 DEBUG] [activity:205][39m   => succeeded with '1'
+[36m[2022-05-30 17:00:40 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[36m[2022-05-30 17:00:40 DEBUG] [hypothesis:221][39m allowed tolerance is 1
+[32m[2022-05-30 17:00:40 INFO] [hypothesis:231][39m Steady state hypothesis is met!
+[36m[2022-05-30 17:00:40 DEBUG] [__init__:399][39m No controls to apply on 'hypothesis'
+[32m[2022-05-30 17:00:40 INFO] [run:607][39m Playing your experiment's method now...
+[36m[2022-05-30 17:00:40 DEBUG] [__init__:399][39m No controls to apply on 'method'
+[36m[2022-05-30 17:00:40 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[32m[2022-05-30 17:00:40 INFO] [activity:188][39m Action: terminate-pod
+[36m[2022-05-30 17:00:40 DEBUG] [python:33][39m Activity 'terminate-pod' loaded from '/Users/paulo.kinjo/.venvs/chaostk/lib/python3.8/site-packages/chaosk8s/pod/actions.py'
+[36m[2022-05-30 17:00:40 DEBUG] [__init__:73][39m Using Kubernetes context 'default' from config '/Users/paulo.kinjo/.kube/config'
+[36m[2022-05-30 17:00:40 DEBUG] [actions:232][39m Found 1 pods labelled 'app=go-demo-8' in ns go-demo-8
+[36m[2022-05-30 17:00:40 DEBUG] [activity:205][39m   => succeeded with '['go-demo-8']'
+[36m[2022-05-30 17:00:40 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[36m[2022-05-30 17:00:40 DEBUG] [__init__:399][39m No controls to apply on 'method'
+[36m[2022-05-30 17:00:40 DEBUG] [run:536][39m Running steady-state hypothesis after the method
+[32m[2022-05-30 17:00:40 INFO] [hypothesis:182][39m Steady state hypothesis: Pod exists
+[36m[2022-05-30 17:00:40 DEBUG] [__init__:399][39m No controls to apply on 'hypothesis'
+[36m[2022-05-30 17:00:40 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[32m[2022-05-30 17:00:40 INFO] [activity:188][39m Probe: pod-exists
+[36m[2022-05-30 17:00:40 DEBUG] [python:33][39m Activity 'pod-exists' loaded from '/Users/paulo.kinjo/.venvs/chaostk/lib/python3.8/site-packages/chaosk8s/pod/probes.py'
+[36m[2022-05-30 17:00:40 DEBUG] [__init__:73][39m Using Kubernetes context 'default' from config '/Users/paulo.kinjo/.kube/config'
+[36m[2022-05-30 17:00:40 DEBUG] [probes:218][39m Found 1 pods matching label 'app=go-demo-8' in ns 'go-demo-8'
+[36m[2022-05-30 17:00:40 DEBUG] [activity:205][39m   => succeeded with '1'
+[36m[2022-05-30 17:00:40 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[36m[2022-05-30 17:00:40 DEBUG] [hypothesis:221][39m allowed tolerance is 1
+[32m[2022-05-30 17:00:40 INFO] [hypothesis:231][39m Steady state hypothesis is met!
+[36m[2022-05-30 17:00:40 DEBUG] [__init__:399][39m No controls to apply on 'hypothesis'
+[32m[2022-05-30 17:00:40 INFO] [run:893][39m Let's rollback...
+[36m[2022-05-30 17:00:40 DEBUG] [__init__:399][39m No controls to apply on 'rollback'
+[32m[2022-05-30 17:00:40 INFO] [rollback:27][39m No declared rollbacks, let's move on.
+[36m[2022-05-30 17:00:40 DEBUG] [__init__:399][39m No controls to apply on 'rollback'
+[32m[2022-05-30 17:00:40 INFO] [run:458][39m Experiment ended with status: completed
+[36m[2022-05-30 17:00:40 DEBUG] [__init__:399][39m No controls to apply on 'experiment'
+[36m[2022-05-30 17:00:40 DEBUG] [__init__:91][39m Cleaning up controls
+[36m[2022-05-30 17:00:40 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2022-05-30 17:04:16 DEBUG] [cli:112][39m ###############################################################################
+[36m[2022-05-30 17:04:16 DEBUG] [cli:113][39m Running command 'run'
+[36m[2022-05-30 17:04:16 DEBUG] [cli:117][39m Using settings file '/Users/paulo.kinjo/.chaostoolkit/settings.yaml'
+[36m[2022-05-30 17:04:17 DEBUG] [settings:30][39m The Chaos Toolkit settings file could not be found at '/Users/paulo.kinjo/.chaostoolkit/settings.yaml'.
+[36m[2022-05-30 17:04:17 DEBUG] [__init__:399][39m No controls to apply on 'loader'
+[36m[2022-05-30 17:04:17 DEBUG] [__init__:399][39m No controls to apply on 'loader'
+[36m[2022-05-30 17:04:17 DEBUG] [caching:24][39m Building activity cache...
+[36m[2022-05-30 17:04:17 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2022-05-30 17:04:17 INFO] [experiment:58][39m Validating the experiment's syntax
+[36m[2022-05-30 17:04:17 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2022-05-30 17:04:17 DEBUG] [secret:78][39m Loading secrets...
+[36m[2022-05-30 17:04:17 DEBUG] [secret:104][39m Done loading secrets
+[32m[2022-05-30 17:04:20 INFO] [experiment:109][39m Experiment looks valid
+[36m[2022-05-30 17:04:20 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2022-05-30 17:04:20 DEBUG] [caching:24][39m Building activity cache...
+[36m[2022-05-30 17:04:20 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2022-05-30 17:04:20 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2022-05-30 17:04:20 DEBUG] [secret:78][39m Loading secrets...
+[36m[2022-05-30 17:04:20 DEBUG] [secret:104][39m Done loading secrets
+[36m[2022-05-30 17:04:20 DEBUG] [configuration:155][39m Loading dynamic configuration...
+[32m[2022-05-30 17:04:20 INFO] [run:320][39m Running experiment: What happens if we terminate a Pod?
+[36m[2022-05-30 17:04:20 DEBUG] [__init__:52][39m Initializing controls
+[32m[2022-05-30 17:04:20 INFO] [run:344][39m Steady-state strategy: default
+[32m[2022-05-30 17:04:20 INFO] [run:348][39m Rollbacks strategy: default
+[36m[2022-05-30 17:04:20 DEBUG] [__init__:399][39m No controls to apply on 'experiment'
+[36m[2022-05-30 17:04:20 DEBUG] [run:506][39m Running steady-state hypothesis before the method
+[32m[2022-05-30 17:04:20 INFO] [hypothesis:182][39m Steady state hypothesis: Pod exists
+[36m[2022-05-30 17:04:20 DEBUG] [__init__:399][39m No controls to apply on 'hypothesis'
+[36m[2022-05-30 17:04:20 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[32m[2022-05-30 17:04:20 INFO] [activity:188][39m Probe: pod-exists
+[36m[2022-05-30 17:04:20 DEBUG] [python:33][39m Activity 'pod-exists' loaded from '/Users/paulo.kinjo/.venvs/chaostk/lib/python3.8/site-packages/chaosk8s/pod/probes.py'
+[36m[2022-05-30 17:04:20 DEBUG] [__init__:73][39m Using Kubernetes context 'default' from config '/Users/paulo.kinjo/.kube/config'
+[36m[2022-05-30 17:04:20 DEBUG] [probes:218][39m Found 1 pods matching label 'app=go-demo-8' in ns 'go-demo-8'
+[36m[2022-05-30 17:04:20 DEBUG] [activity:205][39m   => succeeded with '1'
+[36m[2022-05-30 17:04:20 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[36m[2022-05-30 17:04:20 DEBUG] [hypothesis:221][39m allowed tolerance is 1
+[32m[2022-05-30 17:04:20 INFO] [hypothesis:231][39m Steady state hypothesis is met!
+[36m[2022-05-30 17:04:20 DEBUG] [__init__:399][39m No controls to apply on 'hypothesis'
+[32m[2022-05-30 17:04:20 INFO] [run:607][39m Playing your experiment's method now...
+[36m[2022-05-30 17:04:20 DEBUG] [__init__:399][39m No controls to apply on 'method'
+[36m[2022-05-30 17:04:20 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[32m[2022-05-30 17:04:20 INFO] [activity:188][39m Action: terminate-pod
+[36m[2022-05-30 17:04:20 DEBUG] [python:33][39m Activity 'terminate-pod' loaded from '/Users/paulo.kinjo/.venvs/chaostk/lib/python3.8/site-packages/chaosk8s/pod/actions.py'
+[36m[2022-05-30 17:04:20 DEBUG] [__init__:73][39m Using Kubernetes context 'default' from config '/Users/paulo.kinjo/.kube/config'
+[36m[2022-05-30 17:04:20 DEBUG] [actions:232][39m Found 1 pods labelled 'app=go-demo-8' in ns go-demo-8
+[36m[2022-05-30 17:04:20 DEBUG] [activity:205][39m   => succeeded with '['go-demo-8']'
+[32m[2022-05-30 17:04:20 INFO] [activity:223][39m Pausing after activity for 10s...
+[36m[2022-05-30 17:04:30 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[36m[2022-05-30 17:04:30 DEBUG] [__init__:399][39m No controls to apply on 'method'
+[36m[2022-05-30 17:04:30 DEBUG] [run:536][39m Running steady-state hypothesis after the method
+[32m[2022-05-30 17:04:30 INFO] [hypothesis:182][39m Steady state hypothesis: Pod exists
+[36m[2022-05-30 17:04:30 DEBUG] [__init__:399][39m No controls to apply on 'hypothesis'
+[36m[2022-05-30 17:04:30 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[32m[2022-05-30 17:04:30 INFO] [activity:188][39m Probe: pod-exists
+[36m[2022-05-30 17:04:30 DEBUG] [python:33][39m Activity 'pod-exists' loaded from '/Users/paulo.kinjo/.venvs/chaostk/lib/python3.8/site-packages/chaosk8s/pod/probes.py'
+[36m[2022-05-30 17:04:30 DEBUG] [__init__:73][39m Using Kubernetes context 'default' from config '/Users/paulo.kinjo/.kube/config'
+[36m[2022-05-30 17:04:30 DEBUG] [probes:218][39m Found 0 pods matching label 'app=go-demo-8' in ns 'go-demo-8'
+[36m[2022-05-30 17:04:30 DEBUG] [activity:205][39m   => succeeded with '0'
+[36m[2022-05-30 17:04:30 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[36m[2022-05-30 17:04:30 DEBUG] [hypothesis:221][39m allowed tolerance is 1
+[36m[2022-05-30 17:04:30 DEBUG] [__init__:399][39m No controls to apply on 'hypothesis'
+[31m[2022-05-30 17:04:30 CRITICAL] [run:545][39m Steady state probe 'pod-exists' is not in the given tolerance so failing this experiment
+[32m[2022-05-30 17:04:30 INFO] [run:458][39m Experiment ended with status: deviated
+[32m[2022-05-30 17:04:30 INFO] [run:460][39m The steady-state has deviated, a weakness may have been discovered
+[36m[2022-05-30 17:04:30 DEBUG] [__init__:399][39m No controls to apply on 'experiment'
+[36m[2022-05-30 17:04:30 DEBUG] [__init__:91][39m Cleaning up controls
+[36m[2022-05-30 17:04:30 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2022-05-30 17:05:24 DEBUG] [cli:112][39m ###############################################################################
+[36m[2022-05-30 17:05:24 DEBUG] [cli:113][39m Running command 'run'
+[36m[2022-05-30 17:05:24 DEBUG] [cli:117][39m Using settings file '/Users/paulo.kinjo/.chaostoolkit/settings.yaml'
+[36m[2022-05-30 17:05:25 DEBUG] [settings:30][39m The Chaos Toolkit settings file could not be found at '/Users/paulo.kinjo/.chaostoolkit/settings.yaml'.
+[36m[2022-05-30 17:05:25 DEBUG] [__init__:399][39m No controls to apply on 'loader'
+[36m[2022-05-30 17:05:25 DEBUG] [__init__:399][39m No controls to apply on 'loader'
+[36m[2022-05-30 17:05:25 DEBUG] [caching:24][39m Building activity cache...
+[36m[2022-05-30 17:05:25 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2022-05-30 17:05:25 INFO] [experiment:58][39m Validating the experiment's syntax
+[36m[2022-05-30 17:05:25 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2022-05-30 17:05:25 DEBUG] [secret:78][39m Loading secrets...
+[36m[2022-05-30 17:05:25 DEBUG] [secret:104][39m Done loading secrets
+[32m[2022-05-30 17:05:28 INFO] [experiment:109][39m Experiment looks valid
+[36m[2022-05-30 17:05:28 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2022-05-30 17:05:28 DEBUG] [caching:24][39m Building activity cache...
+[36m[2022-05-30 17:05:28 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2022-05-30 17:05:28 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2022-05-30 17:05:28 DEBUG] [secret:78][39m Loading secrets...
+[36m[2022-05-30 17:05:28 DEBUG] [secret:104][39m Done loading secrets
+[36m[2022-05-30 17:05:28 DEBUG] [configuration:155][39m Loading dynamic configuration...
+[32m[2022-05-30 17:05:28 INFO] [run:320][39m Running experiment: What happens if we terminate a Pod?
+[36m[2022-05-30 17:05:28 DEBUG] [__init__:52][39m Initializing controls
+[32m[2022-05-30 17:05:28 INFO] [run:344][39m Steady-state strategy: default
+[32m[2022-05-30 17:05:28 INFO] [run:348][39m Rollbacks strategy: default
+[36m[2022-05-30 17:05:28 DEBUG] [__init__:399][39m No controls to apply on 'experiment'
+[36m[2022-05-30 17:05:28 DEBUG] [run:506][39m Running steady-state hypothesis before the method
+[32m[2022-05-30 17:05:28 INFO] [hypothesis:182][39m Steady state hypothesis: Pod exists
+[36m[2022-05-30 17:05:28 DEBUG] [__init__:399][39m No controls to apply on 'hypothesis'
+[36m[2022-05-30 17:05:28 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[32m[2022-05-30 17:05:28 INFO] [activity:188][39m Probe: pod-exists
+[36m[2022-05-30 17:05:28 DEBUG] [python:33][39m Activity 'pod-exists' loaded from '/Users/paulo.kinjo/.venvs/chaostk/lib/python3.8/site-packages/chaosk8s/pod/probes.py'
+[36m[2022-05-30 17:05:28 DEBUG] [__init__:73][39m Using Kubernetes context 'default' from config '/Users/paulo.kinjo/.kube/config'
+[36m[2022-05-30 17:05:28 DEBUG] [probes:218][39m Found 0 pods matching label 'app=go-demo-8' in ns 'go-demo-8'
+[36m[2022-05-30 17:05:28 DEBUG] [activity:205][39m   => succeeded with '0'
+[36m[2022-05-30 17:05:28 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[36m[2022-05-30 17:05:28 DEBUG] [hypothesis:221][39m allowed tolerance is 1
+[36m[2022-05-30 17:05:28 DEBUG] [__init__:399][39m No controls to apply on 'hypothesis'
+[31m[2022-05-30 17:05:28 CRITICAL] [run:516][39m Steady state probe 'pod-exists' is not in the given tolerance so failing this experiment
+[32m[2022-05-30 17:05:28 INFO] [run:458][39m Experiment ended with status: failed
+[36m[2022-05-30 17:05:28 DEBUG] [__init__:399][39m No controls to apply on 'experiment'
+[36m[2022-05-30 17:05:28 DEBUG] [__init__:91][39m Cleaning up controls
+[36m[2022-05-30 17:05:28 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2022-05-30 17:05:57 DEBUG] [cli:112][39m ###############################################################################
+[36m[2022-05-30 17:05:57 DEBUG] [cli:113][39m Running command 'run'
+[36m[2022-05-30 17:05:57 DEBUG] [cli:117][39m Using settings file '/Users/paulo.kinjo/.chaostoolkit/settings.yaml'
+[36m[2022-05-30 17:05:58 DEBUG] [settings:30][39m The Chaos Toolkit settings file could not be found at '/Users/paulo.kinjo/.chaostoolkit/settings.yaml'.
+[36m[2022-05-30 17:05:58 DEBUG] [__init__:399][39m No controls to apply on 'loader'
+[36m[2022-05-30 17:05:58 DEBUG] [__init__:399][39m No controls to apply on 'loader'
+[36m[2022-05-30 17:05:58 DEBUG] [caching:24][39m Building activity cache...
+[36m[2022-05-30 17:05:58 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2022-05-30 17:05:58 INFO] [experiment:58][39m Validating the experiment's syntax
+[36m[2022-05-30 17:05:58 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2022-05-30 17:05:58 DEBUG] [secret:78][39m Loading secrets...
+[36m[2022-05-30 17:05:58 DEBUG] [secret:104][39m Done loading secrets
+[32m[2022-05-30 17:06:01 INFO] [experiment:109][39m Experiment looks valid
+[36m[2022-05-30 17:06:01 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2022-05-30 17:06:01 DEBUG] [caching:24][39m Building activity cache...
+[36m[2022-05-30 17:06:01 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2022-05-30 17:06:01 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2022-05-30 17:06:01 DEBUG] [secret:78][39m Loading secrets...
+[36m[2022-05-30 17:06:01 DEBUG] [secret:104][39m Done loading secrets
+[36m[2022-05-30 17:06:01 DEBUG] [configuration:155][39m Loading dynamic configuration...
+[32m[2022-05-30 17:06:01 INFO] [run:320][39m Running experiment: What happens if we terminate a Pod?
+[36m[2022-05-30 17:06:01 DEBUG] [__init__:52][39m Initializing controls
+[32m[2022-05-30 17:06:01 INFO] [run:344][39m Steady-state strategy: default
+[32m[2022-05-30 17:06:01 INFO] [run:348][39m Rollbacks strategy: default
+[36m[2022-05-30 17:06:01 DEBUG] [__init__:399][39m No controls to apply on 'experiment'
+[36m[2022-05-30 17:06:01 DEBUG] [run:506][39m Running steady-state hypothesis before the method
+[32m[2022-05-30 17:06:01 INFO] [hypothesis:182][39m Steady state hypothesis: Pod exists
+[36m[2022-05-30 17:06:01 DEBUG] [__init__:399][39m No controls to apply on 'hypothesis'
+[36m[2022-05-30 17:06:01 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[32m[2022-05-30 17:06:01 INFO] [activity:188][39m Probe: pod-exists
+[36m[2022-05-30 17:06:01 DEBUG] [python:33][39m Activity 'pod-exists' loaded from '/Users/paulo.kinjo/.venvs/chaostk/lib/python3.8/site-packages/chaosk8s/pod/probes.py'
+[36m[2022-05-30 17:06:01 DEBUG] [__init__:73][39m Using Kubernetes context 'default' from config '/Users/paulo.kinjo/.kube/config'
+[36m[2022-05-30 17:06:01 DEBUG] [probes:218][39m Found 0 pods matching label 'app=go-demo-8' in ns 'go-demo-8'
+[36m[2022-05-30 17:06:01 DEBUG] [activity:205][39m   => succeeded with '0'
+[36m[2022-05-30 17:06:01 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[36m[2022-05-30 17:06:01 DEBUG] [hypothesis:221][39m allowed tolerance is 1
+[36m[2022-05-30 17:06:01 DEBUG] [__init__:399][39m No controls to apply on 'hypothesis'
+[31m[2022-05-30 17:06:01 CRITICAL] [run:516][39m Steady state probe 'pod-exists' is not in the given tolerance so failing this experiment
+[32m[2022-05-30 17:06:01 INFO] [run:458][39m Experiment ended with status: failed
+[36m[2022-05-30 17:06:01 DEBUG] [__init__:399][39m No controls to apply on 'experiment'
+[36m[2022-05-30 17:06:01 DEBUG] [__init__:91][39m Cleaning up controls
+[36m[2022-05-30 17:06:01 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2022-05-30 17:06:34 DEBUG] [cli:112][39m ###############################################################################
+[36m[2022-05-30 17:06:34 DEBUG] [cli:113][39m Running command 'run'
+[36m[2022-05-30 17:06:34 DEBUG] [cli:117][39m Using settings file '/Users/paulo.kinjo/.chaostoolkit/settings.yaml'
+[36m[2022-05-30 17:06:35 DEBUG] [settings:30][39m The Chaos Toolkit settings file could not be found at '/Users/paulo.kinjo/.chaostoolkit/settings.yaml'.
+[36m[2022-05-30 17:06:35 DEBUG] [__init__:399][39m No controls to apply on 'loader'
+[36m[2022-05-30 17:06:35 DEBUG] [__init__:399][39m No controls to apply on 'loader'
+[36m[2022-05-30 17:06:35 DEBUG] [caching:24][39m Building activity cache...
+[36m[2022-05-30 17:06:35 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2022-05-30 17:06:35 INFO] [experiment:58][39m Validating the experiment's syntax
+[36m[2022-05-30 17:06:35 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2022-05-30 17:06:35 DEBUG] [secret:78][39m Loading secrets...
+[36m[2022-05-30 17:06:35 DEBUG] [secret:104][39m Done loading secrets
+[32m[2022-05-30 17:06:38 INFO] [experiment:109][39m Experiment looks valid
+[36m[2022-05-30 17:06:38 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2022-05-30 17:06:38 DEBUG] [caching:24][39m Building activity cache...
+[36m[2022-05-30 17:06:38 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2022-05-30 17:06:38 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2022-05-30 17:06:38 DEBUG] [secret:78][39m Loading secrets...
+[36m[2022-05-30 17:06:38 DEBUG] [secret:104][39m Done loading secrets
+[36m[2022-05-30 17:06:38 DEBUG] [configuration:155][39m Loading dynamic configuration...
+[32m[2022-05-30 17:06:38 INFO] [run:320][39m Running experiment: What happens if we terminate a Pod?
+[36m[2022-05-30 17:06:38 DEBUG] [__init__:52][39m Initializing controls
+[32m[2022-05-30 17:06:38 INFO] [run:344][39m Steady-state strategy: default
+[32m[2022-05-30 17:06:38 INFO] [run:348][39m Rollbacks strategy: default
+[36m[2022-05-30 17:06:38 DEBUG] [__init__:399][39m No controls to apply on 'experiment'
+[36m[2022-05-30 17:06:38 DEBUG] [run:506][39m Running steady-state hypothesis before the method
+[32m[2022-05-30 17:06:38 INFO] [hypothesis:182][39m Steady state hypothesis: Pod exists
+[36m[2022-05-30 17:06:38 DEBUG] [__init__:399][39m No controls to apply on 'hypothesis'
+[36m[2022-05-30 17:06:38 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[32m[2022-05-30 17:06:38 INFO] [activity:188][39m Probe: pod-exists
+[36m[2022-05-30 17:06:38 DEBUG] [python:33][39m Activity 'pod-exists' loaded from '/Users/paulo.kinjo/.venvs/chaostk/lib/python3.8/site-packages/chaosk8s/pod/probes.py'
+[36m[2022-05-30 17:06:38 DEBUG] [__init__:73][39m Using Kubernetes context 'default' from config '/Users/paulo.kinjo/.kube/config'
+[36m[2022-05-30 17:06:38 DEBUG] [probes:218][39m Found 0 pods matching label 'app=go-demo-8' in ns 'go-demo-8'
+[36m[2022-05-30 17:06:38 DEBUG] [activity:205][39m   => succeeded with '0'
+[36m[2022-05-30 17:06:38 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[36m[2022-05-30 17:06:38 DEBUG] [hypothesis:221][39m allowed tolerance is 1
+[36m[2022-05-30 17:06:38 DEBUG] [__init__:399][39m No controls to apply on 'hypothesis'
+[31m[2022-05-30 17:06:38 CRITICAL] [run:516][39m Steady state probe 'pod-exists' is not in the given tolerance so failing this experiment
+[32m[2022-05-30 17:06:38 INFO] [run:458][39m Experiment ended with status: failed
+[36m[2022-05-30 17:06:38 DEBUG] [__init__:399][39m No controls to apply on 'experiment'
+[36m[2022-05-30 17:06:38 DEBUG] [__init__:91][39m Cleaning up controls
+[36m[2022-05-30 17:06:38 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2022-05-30 17:07:03 DEBUG] [cli:112][39m ###############################################################################
+[36m[2022-05-30 17:07:03 DEBUG] [cli:113][39m Running command 'run'
+[36m[2022-05-30 17:07:03 DEBUG] [cli:117][39m Using settings file '/Users/paulo.kinjo/.chaostoolkit/settings.yaml'
+[36m[2022-05-30 17:07:04 DEBUG] [settings:30][39m The Chaos Toolkit settings file could not be found at '/Users/paulo.kinjo/.chaostoolkit/settings.yaml'.
+[36m[2022-05-30 17:07:04 DEBUG] [__init__:399][39m No controls to apply on 'loader'
+[36m[2022-05-30 17:07:04 DEBUG] [__init__:399][39m No controls to apply on 'loader'
+[36m[2022-05-30 17:07:04 DEBUG] [caching:24][39m Building activity cache...
+[36m[2022-05-30 17:07:04 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2022-05-30 17:07:04 INFO] [experiment:58][39m Validating the experiment's syntax
+[36m[2022-05-30 17:07:04 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2022-05-30 17:07:04 DEBUG] [secret:78][39m Loading secrets...
+[36m[2022-05-30 17:07:04 DEBUG] [secret:104][39m Done loading secrets
+[32m[2022-05-30 17:07:07 INFO] [experiment:109][39m Experiment looks valid
+[36m[2022-05-30 17:07:07 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2022-05-30 17:07:07 DEBUG] [caching:24][39m Building activity cache...
+[36m[2022-05-30 17:07:07 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2022-05-30 17:07:07 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2022-05-30 17:07:07 DEBUG] [secret:78][39m Loading secrets...
+[36m[2022-05-30 17:07:07 DEBUG] [secret:104][39m Done loading secrets
+[36m[2022-05-30 17:07:07 DEBUG] [configuration:155][39m Loading dynamic configuration...
+[32m[2022-05-30 17:07:07 INFO] [run:320][39m Running experiment: What happens if we terminate a Pod?
+[36m[2022-05-30 17:07:07 DEBUG] [__init__:52][39m Initializing controls
+[32m[2022-05-30 17:07:07 INFO] [run:344][39m Steady-state strategy: default
+[32m[2022-05-30 17:07:07 INFO] [run:348][39m Rollbacks strategy: default
+[36m[2022-05-30 17:07:07 DEBUG] [__init__:399][39m No controls to apply on 'experiment'
+[36m[2022-05-30 17:07:07 DEBUG] [run:506][39m Running steady-state hypothesis before the method
+[32m[2022-05-30 17:07:07 INFO] [hypothesis:182][39m Steady state hypothesis: Pod exists
+[36m[2022-05-30 17:07:07 DEBUG] [__init__:399][39m No controls to apply on 'hypothesis'
+[36m[2022-05-30 17:07:07 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[32m[2022-05-30 17:07:07 INFO] [activity:188][39m Probe: pod-exists
+[36m[2022-05-30 17:07:07 DEBUG] [python:33][39m Activity 'pod-exists' loaded from '/Users/paulo.kinjo/.venvs/chaostk/lib/python3.8/site-packages/chaosk8s/pod/probes.py'
+[36m[2022-05-30 17:07:07 DEBUG] [__init__:73][39m Using Kubernetes context 'default' from config '/Users/paulo.kinjo/.kube/config'
+[36m[2022-05-30 17:07:07 DEBUG] [probes:218][39m Found 0 pods matching label 'app=go-demo-8' in ns 'go-demo-8'
+[36m[2022-05-30 17:07:07 DEBUG] [activity:205][39m   => succeeded with '0'
+[36m[2022-05-30 17:07:07 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[36m[2022-05-30 17:07:07 DEBUG] [hypothesis:221][39m allowed tolerance is 1
+[36m[2022-05-30 17:07:07 DEBUG] [__init__:399][39m No controls to apply on 'hypothesis'
+[31m[2022-05-30 17:07:07 CRITICAL] [run:516][39m Steady state probe 'pod-exists' is not in the given tolerance so failing this experiment
+[32m[2022-05-30 17:07:07 INFO] [run:458][39m Experiment ended with status: failed
+[36m[2022-05-30 17:07:07 DEBUG] [__init__:399][39m No controls to apply on 'experiment'
+[36m[2022-05-30 17:07:07 DEBUG] [__init__:91][39m Cleaning up controls
+[36m[2022-05-30 17:07:07 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2022-05-30 17:09:01 DEBUG] [cli:112][39m ###############################################################################
+[36m[2022-05-30 17:09:01 DEBUG] [cli:113][39m Running command 'run'
+[36m[2022-05-30 17:09:01 DEBUG] [cli:117][39m Using settings file '/Users/paulo.kinjo/.chaostoolkit/settings.yaml'
+[36m[2022-05-30 17:09:01 DEBUG] [settings:30][39m The Chaos Toolkit settings file could not be found at '/Users/paulo.kinjo/.chaostoolkit/settings.yaml'.
+[36m[2022-05-30 17:09:01 DEBUG] [__init__:399][39m No controls to apply on 'loader'
+[36m[2022-05-30 17:09:01 DEBUG] [__init__:399][39m No controls to apply on 'loader'
+[36m[2022-05-30 17:09:01 DEBUG] [caching:24][39m Building activity cache...
+[36m[2022-05-30 17:09:01 DEBUG] [caching:35][39m Cached 4 activities
+[32m[2022-05-30 17:09:01 INFO] [experiment:58][39m Validating the experiment's syntax
+[36m[2022-05-30 17:09:01 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2022-05-30 17:09:01 DEBUG] [secret:78][39m Loading secrets...
+[36m[2022-05-30 17:09:01 DEBUG] [secret:104][39m Done loading secrets
+[32m[2022-05-30 17:09:04 INFO] [experiment:109][39m Experiment looks valid
+[36m[2022-05-30 17:09:04 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2022-05-30 17:09:04 DEBUG] [caching:24][39m Building activity cache...
+[36m[2022-05-30 17:09:04 DEBUG] [caching:35][39m Cached 4 activities
+[36m[2022-05-30 17:09:04 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2022-05-30 17:09:04 DEBUG] [secret:78][39m Loading secrets...
+[36m[2022-05-30 17:09:04 DEBUG] [secret:104][39m Done loading secrets
+[36m[2022-05-30 17:09:04 DEBUG] [configuration:155][39m Loading dynamic configuration...
+[32m[2022-05-30 17:09:04 INFO] [run:320][39m Running experiment: What happens if we terminate a Pod?
+[36m[2022-05-30 17:09:04 DEBUG] [__init__:52][39m Initializing controls
+[32m[2022-05-30 17:09:04 INFO] [run:344][39m Steady-state strategy: default
+[32m[2022-05-30 17:09:04 INFO] [run:348][39m Rollbacks strategy: default
+[36m[2022-05-30 17:09:04 DEBUG] [__init__:399][39m No controls to apply on 'experiment'
+[36m[2022-05-30 17:09:04 DEBUG] [run:506][39m Running steady-state hypothesis before the method
+[32m[2022-05-30 17:09:04 INFO] [hypothesis:182][39m Steady state hypothesis: Pod exists
+[36m[2022-05-30 17:09:04 DEBUG] [__init__:399][39m No controls to apply on 'hypothesis'
+[36m[2022-05-30 17:09:04 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[32m[2022-05-30 17:09:04 INFO] [activity:188][39m Probe: pod-exists
+[36m[2022-05-30 17:09:04 DEBUG] [python:33][39m Activity 'pod-exists' loaded from '/Users/paulo.kinjo/.venvs/chaostk/lib/python3.8/site-packages/chaosk8s/pod/probes.py'
+[36m[2022-05-30 17:09:04 DEBUG] [__init__:73][39m Using Kubernetes context 'default' from config '/Users/paulo.kinjo/.kube/config'
+[36m[2022-05-30 17:09:05 DEBUG] [probes:218][39m Found 1 pods matching label 'app=go-demo-8' in ns 'go-demo-8'
+[36m[2022-05-30 17:09:05 DEBUG] [activity:205][39m   => succeeded with '1'
+[36m[2022-05-30 17:09:05 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[36m[2022-05-30 17:09:05 DEBUG] [hypothesis:221][39m allowed tolerance is 1
+[36m[2022-05-30 17:09:05 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[32m[2022-05-30 17:09:05 INFO] [activity:188][39m Probe: pod-in-phase
+[36m[2022-05-30 17:09:05 DEBUG] [python:33][39m Activity 'pod-in-phase' loaded from '/Users/paulo.kinjo/.venvs/chaostk/lib/python3.8/site-packages/chaosk8s/pod/probes.py'
+[36m[2022-05-30 17:09:05 DEBUG] [__init__:73][39m Using Kubernetes context 'default' from config '/Users/paulo.kinjo/.kube/config'
+[36m[2022-05-30 17:09:05 DEBUG] [probes:105][39m Found 1 pods matching label 'app=go-demo-8' in ns 'go-demo-8'
+[36m[2022-05-30 17:09:05 DEBUG] [activity:205][39m   => succeeded with 'True'
+[36m[2022-05-30 17:09:05 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[36m[2022-05-30 17:09:05 DEBUG] [hypothesis:221][39m allowed tolerance is True
+[36m[2022-05-30 17:09:05 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[32m[2022-05-30 17:09:05 INFO] [activity:188][39m Probe: pod-in-conditions
+[36m[2022-05-30 17:09:05 DEBUG] [python:33][39m Activity 'pod-in-conditions' loaded from '/Users/paulo.kinjo/.venvs/chaostk/lib/python3.8/site-packages/chaosk8s/pod/probes.py'
+[36m[2022-05-30 17:09:05 DEBUG] [__init__:73][39m Using Kubernetes context 'default' from config '/Users/paulo.kinjo/.kube/config'
+[36m[2022-05-30 17:09:05 DEBUG] [probes:143][39m Found 1 pods matching label 'app=go-demo-8' in ns 'go-demo-8'
+[36m[2022-05-30 17:09:05 DEBUG] [activity:260][39m Activity failed
+    Traceback (most recent call last):
+      File "/Users/paulo.kinjo/.venvs/chaostk/lib/python3.8/site-packages/chaoslib/provider/python.py", line 56, in run_python_activity
+        return func(**arguments)
+      File "/Users/paulo.kinjo/.venvs/chaostk/lib/python3.8/site-packages/chaosk8s/pod/probes.py", line 161, in pods_in_conditions
+        raise ActivityFailed(
+    chaoslib.exceptions.ActivityFailed: pod go-demo-8-cc8f5f6d8-6c7xk does not match the following given condition: {'type': 'Ready', 'status': 'True'}
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/Users/paulo.kinjo/.venvs/chaostk/lib/python3.8/site-packages/chaoslib/activity.py", line 253, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+      File "/Users/paulo.kinjo/.venvs/chaostk/lib/python3.8/site-packages/chaoslib/provider/python.py", line 58, in run_python_activity
+        raise ActivityFailed(
+      File "/Users/paulo.kinjo/.venvs/chaostk/lib/python3.8/site-packages/chaoslib/provider/python.py", line 56, in run_python_activity
+        return func(**arguments)
+      File "/Users/paulo.kinjo/.venvs/chaostk/lib/python3.8/site-packages/chaosk8s/pod/probes.py", line 161, in pods_in_conditions
+        raise ActivityFailed(
+    chaoslib.exceptions.ActivityFailed: chaoslib.exceptions.ActivityFailed: pod go-demo-8-cc8f5f6d8-6c7xk does not match the following given condition: {'type': 'Ready', 'status': 'True'}
+[31m[2022-05-30 17:09:05 ERROR] [activity:213][39m   => failed: chaoslib.exceptions.ActivityFailed: pod go-demo-8-cc8f5f6d8-6c7xk does not match the following given condition: {'type': 'Ready', 'status': 'True'}
+[36m[2022-05-30 17:09:05 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[33m[2022-05-30 17:09:05 WARNING] [hypothesis:208][39m Probe terminated unexpectedly, so its tolerance could not be validated
+[36m[2022-05-30 17:09:05 DEBUG] [__init__:399][39m No controls to apply on 'hypothesis'
+[31m[2022-05-30 17:09:05 CRITICAL] [run:516][39m Steady state probe 'pod-in-conditions' is not in the given tolerance so failing this experiment
+[32m[2022-05-30 17:09:05 INFO] [run:458][39m Experiment ended with status: failed
+[36m[2022-05-30 17:09:05 DEBUG] [__init__:399][39m No controls to apply on 'experiment'
+[36m[2022-05-30 17:09:05 DEBUG] [__init__:91][39m Cleaning up controls
+[36m[2022-05-30 17:09:05 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2022-05-30 17:09:28 DEBUG] [cli:112][39m ###############################################################################
+[36m[2022-05-30 17:09:28 DEBUG] [cli:113][39m Running command 'run'
+[36m[2022-05-30 17:09:28 DEBUG] [cli:117][39m Using settings file '/Users/paulo.kinjo/.chaostoolkit/settings.yaml'
+[36m[2022-05-30 17:09:29 DEBUG] [settings:30][39m The Chaos Toolkit settings file could not be found at '/Users/paulo.kinjo/.chaostoolkit/settings.yaml'.
+[36m[2022-05-30 17:09:29 DEBUG] [__init__:399][39m No controls to apply on 'loader'
+[36m[2022-05-30 17:09:29 DEBUG] [__init__:399][39m No controls to apply on 'loader'
+[36m[2022-05-30 17:09:29 DEBUG] [caching:24][39m Building activity cache...
+[36m[2022-05-30 17:09:29 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2022-05-30 17:09:29 INFO] [experiment:58][39m Validating the experiment's syntax
+[36m[2022-05-30 17:09:29 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2022-05-30 17:09:29 DEBUG] [secret:78][39m Loading secrets...
+[36m[2022-05-30 17:09:29 DEBUG] [secret:104][39m Done loading secrets
+[32m[2022-05-30 17:09:32 INFO] [experiment:109][39m Experiment looks valid
+[36m[2022-05-30 17:09:32 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2022-05-30 17:09:32 DEBUG] [caching:24][39m Building activity cache...
+[36m[2022-05-30 17:09:32 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2022-05-30 17:09:32 DEBUG] [configuration:63][39m Loading configuration...
+[36m[2022-05-30 17:09:32 DEBUG] [secret:78][39m Loading secrets...
+[36m[2022-05-30 17:09:32 DEBUG] [secret:104][39m Done loading secrets
+[36m[2022-05-30 17:09:32 DEBUG] [configuration:155][39m Loading dynamic configuration...
+[32m[2022-05-30 17:09:32 INFO] [run:320][39m Running experiment: What happens if we terminate a Pod?
+[36m[2022-05-30 17:09:32 DEBUG] [__init__:52][39m Initializing controls
+[32m[2022-05-30 17:09:32 INFO] [run:344][39m Steady-state strategy: default
+[32m[2022-05-30 17:09:32 INFO] [run:348][39m Rollbacks strategy: default
+[36m[2022-05-30 17:09:32 DEBUG] [__init__:399][39m No controls to apply on 'experiment'
+[36m[2022-05-30 17:09:32 DEBUG] [run:506][39m Running steady-state hypothesis before the method
+[32m[2022-05-30 17:09:32 INFO] [hypothesis:182][39m Steady state hypothesis: Pod exists
+[36m[2022-05-30 17:09:32 DEBUG] [__init__:399][39m No controls to apply on 'hypothesis'
+[36m[2022-05-30 17:09:32 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[32m[2022-05-30 17:09:32 INFO] [activity:188][39m Probe: pod-exists
+[36m[2022-05-30 17:09:32 DEBUG] [python:33][39m Activity 'pod-exists' loaded from '/Users/paulo.kinjo/.venvs/chaostk/lib/python3.8/site-packages/chaosk8s/pod/probes.py'
+[36m[2022-05-30 17:09:32 DEBUG] [__init__:73][39m Using Kubernetes context 'default' from config '/Users/paulo.kinjo/.kube/config'
+[36m[2022-05-30 17:09:32 DEBUG] [probes:218][39m Found 1 pods matching label 'app=go-demo-8' in ns 'go-demo-8'
+[36m[2022-05-30 17:09:32 DEBUG] [activity:205][39m   => succeeded with '1'
+[36m[2022-05-30 17:09:32 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[36m[2022-05-30 17:09:32 DEBUG] [hypothesis:221][39m allowed tolerance is 1
+[32m[2022-05-30 17:09:32 INFO] [hypothesis:231][39m Steady state hypothesis is met!
+[36m[2022-05-30 17:09:32 DEBUG] [__init__:399][39m No controls to apply on 'hypothesis'
+[32m[2022-05-30 17:09:32 INFO] [run:607][39m Playing your experiment's method now...
+[36m[2022-05-30 17:09:32 DEBUG] [__init__:399][39m No controls to apply on 'method'
+[36m[2022-05-30 17:09:32 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[32m[2022-05-30 17:09:32 INFO] [activity:188][39m Action: terminate-pod
+[36m[2022-05-30 17:09:32 DEBUG] [python:33][39m Activity 'terminate-pod' loaded from '/Users/paulo.kinjo/.venvs/chaostk/lib/python3.8/site-packages/chaosk8s/pod/actions.py'
+[36m[2022-05-30 17:09:32 DEBUG] [__init__:73][39m Using Kubernetes context 'default' from config '/Users/paulo.kinjo/.kube/config'
+[36m[2022-05-30 17:09:32 DEBUG] [actions:232][39m Found 1 pods labelled 'app=go-demo-8' in ns go-demo-8
+[36m[2022-05-30 17:09:32 DEBUG] [activity:205][39m   => succeeded with '['go-demo-8-cc8f5f6d8-6c7xk']'
+[32m[2022-05-30 17:09:32 INFO] [activity:223][39m Pausing after activity for 10s...
+[36m[2022-05-30 17:09:42 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[36m[2022-05-30 17:09:42 DEBUG] [__init__:399][39m No controls to apply on 'method'
+[36m[2022-05-30 17:09:42 DEBUG] [run:536][39m Running steady-state hypothesis after the method
+[32m[2022-05-30 17:09:42 INFO] [hypothesis:182][39m Steady state hypothesis: Pod exists
+[36m[2022-05-30 17:09:42 DEBUG] [__init__:399][39m No controls to apply on 'hypothesis'
+[36m[2022-05-30 17:09:42 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[32m[2022-05-30 17:09:42 INFO] [activity:188][39m Probe: pod-exists
+[36m[2022-05-30 17:09:42 DEBUG] [python:33][39m Activity 'pod-exists' loaded from '/Users/paulo.kinjo/.venvs/chaostk/lib/python3.8/site-packages/chaosk8s/pod/probes.py'
+[36m[2022-05-30 17:09:42 DEBUG] [__init__:73][39m Using Kubernetes context 'default' from config '/Users/paulo.kinjo/.kube/config'
+[36m[2022-05-30 17:09:42 DEBUG] [probes:218][39m Found 1 pods matching label 'app=go-demo-8' in ns 'go-demo-8'
+[36m[2022-05-30 17:09:42 DEBUG] [activity:205][39m   => succeeded with '1'
+[36m[2022-05-30 17:09:42 DEBUG] [__init__:399][39m No controls to apply on 'activity'
+[36m[2022-05-30 17:09:42 DEBUG] [hypothesis:221][39m allowed tolerance is 1
+[32m[2022-05-30 17:09:42 INFO] [hypothesis:231][39m Steady state hypothesis is met!
+[36m[2022-05-30 17:09:42 DEBUG] [__init__:399][39m No controls to apply on 'hypothesis'
+[32m[2022-05-30 17:09:42 INFO] [run:893][39m Let's rollback...
+[36m[2022-05-30 17:09:42 DEBUG] [__init__:399][39m No controls to apply on 'rollback'
+[32m[2022-05-30 17:09:42 INFO] [rollback:27][39m No declared rollbacks, let's move on.
+[36m[2022-05-30 17:09:42 DEBUG] [__init__:399][39m No controls to apply on 'rollback'
+[32m[2022-05-30 17:09:42 INFO] [run:458][39m Experiment ended with status: completed
+[36m[2022-05-30 17:09:42 DEBUG] [__init__:399][39m No controls to apply on 'experiment'
+[36m[2022-05-30 17:09:42 DEBUG] [__init__:91][39m Cleaning up controls
+[36m[2022-05-30 17:09:42 DEBUG] [caching:42][39m Clearing activities cache
